@@ -1,0 +1,398 @@
+body {
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    color: #fff;
+    background-color: #44008b;
+    justify-content: center;
+    /* This centers the form horizontally */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #44008b, #00076f, #9f45b0);
+    padding-block: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+/* Adjusting the alignment of search bar and signup button */
+.search-signup-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation styling */
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-items a:hover {
+    color: rgb(255, 255, 255);
+    transition: transform 0.5s;
+}
+
+.nav-items a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Search bar styling */
+.search-bar form {
+    display: flex;
+}
+
+.search-bar {
+    margin-right: 30px;
+    background: #fff;
+    display: flex;
+    border-radius: 60px;
+    padding: 2px 3px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    color: #00076f;
+}
+
+.search-bar button img {
+    width: 20px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    align-content: baseline;
+    background: #e54ed0;
+    cursor: pointer;
+}
+
+/* Signup button styling */
+.signup-button a {
+    text-decoration: none;
+}
+
+.signup-button button {
+    background-color: #e54ed0;
+    border: 0px;
+    font-weight: 650;
+    border-radius: 13px;
+    color: #ffe4f2;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.signup-button button:hover {
+    background-color: #ffe4f2;
+    color: #44008b;
+    font-weight: 650;
+}
+
+
+.game-details-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: flex-start;
+    /* Align game info and rating */
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#game-poster {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(236, 77, 172, 0.7);
+    /* Bright pink neon glow */
+}
+
+
+.game-info {
+    margin-left: 10px;
+    flex-grow: 1;
+    /* Allow game info to take most of the space */
+}
+
+#game-title {
+    font-size: 2rem;
+    color: #ec4dac;
+    /* Bright pink for headings */
+}
+
+.game-info p {
+    color: #ffdee8;
+    /* Light pink text */
+}
+
+#log-review-btn {
+    background-color: #ec4dac;
+    /* Bright pink */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.log-review-btn:hover {
+    background-color: #aa4f9d;
+    /* Magenta on hover */
+}
+
+.rating-stats {
+    background: #3d088d;
+    /* Purple background for contrast */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 140px;
+    /* Define fixed width for rating box */
+    margin-left: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add some depth */
+}
+
+.rating-score {
+    font-size: 3rem;
+    color: #ffdee8;
+}
+
+.review-container {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #ffdee8;
+    position: relative;
+
+}
+
+.review-profile {
+    display: flex;
+    align-items: center;
+    margin-right: -10px;
+}
+
+.review-profile img {
+    width: 60px;
+    /* Profile picture size */
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-header {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.username-rating {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+    color: #ffdee8;
+    /* Light pink */
+    margin-right: 10px;
+}
+
+
+.platform-info {
+    color: #ffdee8;
+    font-size: 0.9rem;
+}
+
+.review-text {
+    margin-top: 10px;
+    color: #ffdee8;
+    /* Light pink text */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.review-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.review-actions button {
+    background-color: transparent;
+    border: none;
+    color: #ec4dac;
+    /* Bright pink for the buttons */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+.review-actions button img {
+    margin-right: 5px;
+}
+
+
+/* Dark background overlay when the review form is active */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black */
+    display: none;
+    /* Hidden by default */
+    z-index: 1;
+}
+
+/* Make the review form appear as a popup */
+#review-form {
+    width: 420px;
+    padding: 25px;
+    background-color: #0c0f6e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #ffdee8;
+    text-align: left;
+    /* display: none; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#review-form h1 {
+    color: #ffdee8;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#review-form .form-group {
+    margin-bottom: 15px;
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffdee8;
+    font-size: 0.9rem;
+}
+
+#review-form .form-group input,
+#review-form .form-group textarea,
+#review-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #3d088d;
+    color: #fff;
+}
+
+#review-form .form-group input::placeholder,
+#review-form .form-group textarea::placeholder {
+    color: #888;
+}
+
+#review-form .form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+#review-form .form-btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ec4dac;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#review-form .form-btn button:hover {
+    background-color: #aa4f9d;
+    /* Magenta */
+}
+
+#review-form .form-btn button:active {
+    transform: scale(0.98);
+    /* Button click effect */
+}
+.back-btn {
+    background-color: #44008b; /* Your galaxy theme colors */
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #9f45b0; /* Lighter shade for hover */
+}
+
+.like-img {
+    width: 12px;
+}

@@ -1,0 +1,11 @@
+[01-Sep-2024 11:56:43 UTC] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/oo303/public_html/ci601/Register.php:33
+Stack trace:
+#0 /home/oo303/public_html/ci601/Register.php(33): mysqli_query(Object(mysqli), 'SELECT * FROM u...')
+#1 {main}
+  thrown in /home/oo303/public_html/ci601/Register.php on line 33
+[01-Sep-2024 12:13:24 UTC] PHP Warning:  Undefined array key "password" in /home/oo303/public_html/ci601/Login.php on line 25
+[02-Sep-2024 07:15:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/oo303/public_html/ci601/Login.php:1) in /home/oo303/public_html/ci601/Login.php on line 26
+[02-Sep-2024 07:22:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/oo303/public_html/ci601/Login.php:1) in /home/oo303/public_html/ci601/Login.php on line 24
+[02-Sep-2024 07:23:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/oo303/public_html/ci601/Login.php:1) in /home/oo303/public_html/ci601/Login.php on line 24
+[02-Sep-2024 07:24:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/oo303/public_html/ci601/Login.php:1) in /home/oo303/public_html/ci601/Login.php on line 25
+[02-Sep-2024 07:24:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/oo303/public_html/ci601/Login.php:1) in /home/oo303/public_html/ci601/Login.php on line 25

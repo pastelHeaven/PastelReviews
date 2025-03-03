@@ -1,0 +1,741 @@
+/* Basic styles */
+body {
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    color: #fff;
+    background-color: #44008b;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #44008b, #00076f, #9f45b0);
+    padding-block: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+/* Adjusting the alignment of search bar and signup button */
+.search-signup-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation styling */
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-items a:hover {
+    color: rgb(255, 255, 255);
+    transition: transform 0.5s;
+}
+
+.nav-items a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Search bar styling */
+.search-bar form {
+    display: flex;
+}
+
+.search-bar {
+    margin-right: 30px;
+    background: #fff;
+    display: flex;
+    border-radius: 60px;
+    padding: 2px 3px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    color: #00076f;
+}
+
+.search-bar button img {
+    width: 20px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    align-content: baseline;
+    background: #e54ed0;
+    cursor: pointer;
+}
+
+/* Signup button styling */
+.signup-button a {
+    text-decoration: none;
+}
+
+.signup-button button {
+    background-color: #e54ed0;
+    border: 0px;
+    font-weight: 650;
+    border-radius: 13px;
+    color: #ffe4f2;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.signup-button button:hover {
+    background-color:#ffe4f2;
+    color: #44008b;
+    font-weight: 650;
+}
+
+/* Banner styling */
+.banner {
+    width: 100%;
+    height: 440px;
+    background-image: url('img/6498043.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Scroll button styling */
+.scroll-button img {
+    width: 20px;
+}
+
+.scroll-button {
+    border: 0;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    align-content: baseline;
+    background: #e54ed0;
+    cursor: pointer;
+}
+
+.gallery div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery img {
+    width: 210px;
+    height: 265px;
+}
+
+.gallery {
+    width: 1120px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; /* Change to 4 columns */
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+    justify-content: space-evenly;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 19px auto;
+}
+
+/* Upcoming Games Title */
+.upcoming-games {
+    padding: 5px 200px;
+    
+}
+
+.upcoming-games h1 {
+    font-size: 2em;
+}
+
+.upcoming-games hr {
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #ffe4f2;
+}
+
+.upcoming-games .see-all {
+    font-size: 1em;
+    color: #ffe4f2;
+
+}
+
+.upcoming-games .see-all:hover {
+    color: #b8b0b4;
+}
+
+.Virtcal-card {
+    padding: 5px 200px;
+}
+
+.Virtcal-card img {
+    width: 310px;
+    height: 190px;
+}
+
+.card-hr {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #8484848b;
+}
+
+.card-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 15px 9px 100px
+}
+
+.text-content {
+    margin-left: 20px; 
+}
+
+.text-content h3 {
+    margin: 30px 0px 27px 0px;
+}
+
+.text-content p {
+    margin: 0;
+}
+
+.upcoming-games img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 45px;
+}
+
+.review-item {
+    display: flex;
+    background-color: #00076f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.review-rating {
+    color: #e54ed0;
+    margin-right: 10px;
+}
+
+.reviewed-game {
+    color: #aaa;
+}
+
+.review-text {
+    margin: 10px 0;
+}
+
+.review-interactions {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.likes, .comments {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+}
+
+.footer-heading h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #e54ed0; }
+
+.footer-newsletter {
+    margin-bottom: 20px;
+}
+
+.footer-newsletter p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 300px; /* Adjust width as needed */
+}
+
+.newsletter-signup .subscribe {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e54ed0; /* Adjust color to match your navigation bar */
+    color: #000;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.footer-navigation {
+    margin-top: 20px;
+}
+
+.footer-navigation nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.footer-navigation nav ul li {
+    display: inline;
+}
+
+.footer-navigation nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-navigation nav ul li a:hover {
+    color: #ffe4f2; /* Adjust color to match your navigation bar */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Games grid styling */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 15px;
+    padding: 36px 200px;
+}
+
+.game-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#imgContainer {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.game-title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #1a1a2e; 
+    padding: 10px;
+    border-radius: 8px;
+    color: #a0a0b0; 
+}
+
+.pagination-button {
+    background-color: #2b2b3b; 
+    color: #a0a0b0; 
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-button:hover {
+    background-color: #3c3c4d; 
+}
+
+.pagination-button.active {
+    background-color: #4b4b6b; 
+    color: #ffffff; 
+}
+
+.pagination-button:disabled {
+    color: #666;
+    cursor: not-allowed;
+}
+
+.pagination-dots {
+    color: #a0a0b0; 
+}
+
+/* News Container */
+.news-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* **Main Featured News Section** */
+.main-news {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.main-news img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-news-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+.news-category {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+.main-news h2 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+/* **News Grid for Smaller Articles** */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.news-card {
+    background: var(--secondary-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 10px;
+}
+
+.news-category {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+.news-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.news-summary {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+
+/* Main News Container */
+.news-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Featured News (Big Card) */
+.news-featured {
+    background: var(--secondary-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.news-featured img {
+    width: 100%;
+    height: 452px;
+    object-fit: cover;
+}
+
+.news-featured .news-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.news-featured h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.news-featured p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* News Grid (4 Cards) */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.news-card {
+    background: var(--secondary-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-card .news-content {
+    padding: 10px;
+}
+
+.news-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Category Tag */
+.news-category {
+    background: var(--highlight);
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* News Article Container */
+.news-article {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--secondary-dark);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Header Image */
+.news-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Meta Information */
+.news-meta {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+/* Introduction Paragraph */
+.news-intro {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Subheadings
+h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: var(--highlight);
+}
+
+/* Paragraphs */
+/* p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+} */
+
+
+

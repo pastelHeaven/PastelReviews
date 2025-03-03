@@ -1,0 +1,133 @@
+body {
+    font-family: "Anton SC", sans-serif;
+    color: #fff;
+    background-color: #44008b;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: linear-gradient(to right, #44008b, #00076f, #9f45b0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dashboard-container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #00076f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-pic label {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #e54ed0;
+}
+
+.user-info h2 {
+    text-align: center;
+}
+
+.user-info p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9f45b0;
+}
+
+.sidebar-menu a:hover {
+    background-color: #e54ed0;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #000;
+    margin-left: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #00076f;
+}
+
+.reviews-list, .likes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item, .like-item {
+    border: 1px solid #e54ed0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #ffe4f2;
+}
+
+.review-item h3, .like-item h3 {
+    margin: 0 0 10px 0;
+    color: #44008b;
+}
+
+.review-item p, .like-item p {
+    margin: 0;
+}

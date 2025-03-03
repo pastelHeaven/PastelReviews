@@ -1,0 +1,77 @@
+/* General styles */
+body {
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    color: #fff;
+    background-color: #44008b;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Form styles specific to registration */
+.registration-form {
+    width: 400px;
+    padding: 20px;
+    background-color: #9f45b0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.registration-form h1 {
+    color: #ffe4f2;
+    margin-bottom: 20px;
+}
+
+.registration-form .form-group {
+    margin-bottom: 15px;
+}
+
+.registration-form .form-group input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.registration-form .form-group input::placeholder {
+    color: #888;
+}
+
+.registration-form .form-btn input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e54ed0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.registration-form .form-btn input:hover {
+    background-color: #ffe4f2;
+    color: #44008b;
+}
+
+.registration-form p {
+    margin-top: 15px;
+}
+
+.registration-form p a {
+    color: #e54ed0;
+    text-decoration: none;
+}
+
+.registration-form p a:hover {
+    text-decoration: underline;
+}
+
+

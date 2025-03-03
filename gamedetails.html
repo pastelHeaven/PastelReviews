@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="gamedetails.css" rel="stylesheet" type="text/css" />
+
+    <title>Game Details</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">PastelReviews</a>
+        <ul class="nav-list section1">
+          <li class="nav-items"><a href="index.html">Home</a></li>
+          <li class="nav-items"><a href="gameGrid.html">Game</a></li>
+          <li class="nav-items"><a href="news.html">Gaming News</a></li>
+          <li class="nav-items"><a href="tips.html">Gaming Upload</a></li>
+          <li class="nav-items"><a href="highlights.html">Gaming Forms</a></li>
+        </ul>
+        <div class="search-signup-container">
+          <div class="search-bar section2">
+            <form action="#">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit">
+                <img src="img/download.png" alt="Search" />
+              </button>
+            </form>
+          </div>
+          <div class="signup-button section3">
+            <a href="Login.php"><button class="login">Login</button></a>
+            <a href="Register.php"><button class="signup">Sign Up</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="game-details-container">
+      <div class="game-header">
+        <img id="game-poster" src="" alt="" "/>
+        <div class="game-info">
+          <h1 id="game-title"></h1>
+          <p id="game-des"></p>
+          <p id="game-date"></p>
+          <p id="game-platform"></p>
+          <p id="game-genre"></p>
+          <button id="log-review-btn">
+            <a id="review-link" href="review.html">Leave a Review</a>
+          </button>
+        </div>
+
+        <div class="rating-stats">
+          <h3>Average Rating</h3>
+          <div class="rating-score"></div>
+        </div>
+      </div>
+
+      <div class="reviews-section">
+        <h2>Reviews</h2>
+        <hr />
+        <div id="reviews-container"></div>
+      </div>
+    </div>
+    <script src="gamedetails.js"></script>
+    <script src="avg_rating.js"></script>
+  </body>
+</html>

@@ -1,4 +1,6 @@
 <?php
+// this is my 
+
 session_start();
 if(!isset($_SESSION["user"])){
     header("Location: Login.php");

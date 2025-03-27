@@ -1,3 +1,7 @@
+/* this is my css for the game review form, keep in mind i have separted diffrent css for example gamereview css(for the main reveiw page), log.css(for the
+registation/login page) the reason why i done this is beacsue i kept on having h1, p, class, background colour styling overlapping with other sypleing that have 
+doen with other pages making it confusing to what header is for what ass i have alot of tag, class, id in the css so i decided to separeate to make
+it easy for me */ 
 body {
     font-family: "Anton SC", sans-serif;
     font-style: normal;
@@ -147,7 +151,7 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(236, 77, 172, 0.7);
-    /* Bright pink neon glow */
+   
 }
 
 .game-info {
@@ -164,12 +168,12 @@ body {
 
 .game-info p {
     color: #ffdee8;
-    /* Light pink text */
+  
 }
 
 #log-review-btn {
     background-color: #ec4dac;
-    /* Bright pink */
+ 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -181,17 +185,17 @@ body {
 
 .log-review-btn:hover {
     background-color: #aa4f9d;
-    /* Magenta on hover */
+ 
 }
 
 .rating-stats {
     background: #3d088d;
-    /* Purple background for contrast */
+   
     padding: 10px;
     border-radius: 8px;
     text-align: center;
     width: 140px;
-    /* Define fixed width for rating box */
+   
     margin-left: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /* Add some depth */

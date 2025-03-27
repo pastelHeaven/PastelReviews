@@ -1,3 +1,7 @@
+/* this css is for my game details page keep in mind i have separted diffrent css for example gamereview css(for the main reveiw page), log.css(for the
+registation/login page) the reason why i done this is beacsue i kept on having h1, p, class, background colour styling overlapping with other sypleing that have 
+doen with other pages making it confusing to what header is for what ass i have alot of tag, class, id in the css so i decided to separeate to make
+it easy for me */ 
 body {
     font-family: "Anton SC", sans-serif;
     font-style: normal;

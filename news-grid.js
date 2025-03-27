@@ -1,3 +1,5 @@
+//thsi si quide simular to what i did for my game grid the only diffrent was the async function fetchNews() but im adding the api data to my
+// news grid
 document.addEventListener("DOMContentLoaded", function () {
     const API_URL = "https://mmo-games.p.rapidapi.com/latestnews"; // mmo games news API URL
     const API_KEY = "21ddba5682msh29223c324433019p1a53fajsn2b5a3606d827";

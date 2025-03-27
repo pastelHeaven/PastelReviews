@@ -1,12 +1,13 @@
+//
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get("game_id");
 
-    if (gameId) {
-        document.getElementById("game-id").value = gameId;
-    } else {
-        document.body.innerHTML = "<p>Error: Game ID not found.</p>";
-    }
+    // if (gameId) {
+    //     document.getElementById("game-id").value = gameId;
+    // } else {
+    //     document.body.innerHTML = "<p>Error: Game ID not found.</p>";
+    // }
 
     // Define goBackToGameDetails Function
     function goBackToGameDetails() {
@@ -20,12 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    //Add Event Listener to Back Button
+    //Adding an event Listener to Back Button so that it will connect with the ids when its clicked
     const backButton = document.querySelector(".back-btn");
     if (backButton) {
         backButton.addEventListener("click", goBackToGameDetails);
     }
     const reviewForm = document.getElementById("review-form");
+
+
 
     if (reviewForm) {
         reviewForm.addEventListener("submit", function (event) {

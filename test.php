@@ -4,7 +4,7 @@ session_start();
 
 header("Content-Type: application/json"); // Ensure JSON response
 
-require_once "conDatabase.php"; // Ensure your connection file is included
+require_once "conDatabase.php";
 
 $response = ["success" => false, "message" => ""];
 

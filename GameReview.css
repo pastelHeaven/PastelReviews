@@ -1,9 +1,10 @@
-/* Basic styles */
 body {
     font-family: "Anton SC", sans-serif;
     font-style: normal;
     color: #fff;
     background-color: #44008b;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -13,11 +14,6 @@ body {
     font-weight: 1000;
     text-decoration: none;
     padding: 20px;
-}
-
-.logo img{
-    height: 100px;
-    width: 100px;
 }
 
 .header {
@@ -35,7 +31,6 @@ body {
     padding: 0px 100px;
 }
 
-/* Adjusting the alignment of search bar and signup button */
 .search-signup-container {
     display: flex;
     align-items: center;
@@ -72,7 +67,12 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/* Search bar styling */
+.card-hr {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #8484848b;
+}
+
 .search-bar form {
     display: flex;
 }
@@ -123,10 +123,11 @@ body {
 }
 
 .signup-button button:hover {
-    background-color:#ffe4f2;
+    background-color: #ffe4f2;
     color: #44008b;
     font-weight: 650;
 }
+
 
 /* Banner styling */
 .banner {
@@ -736,6 +737,8 @@ h2 {
     line-height: 1.6;
     margin-bottom: 15px;
 } */
+
+
 
 
 

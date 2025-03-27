@@ -1,5 +1,7 @@
 <?php
 
+// this is just testing diffrent api from rapdi api website as some of the api on tehir 
+// website are outdated oy not in used anymore
 $curl = curl_init();
 
 curl_setopt_array($curl, [

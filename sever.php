@@ -1,5 +1,7 @@
 <?php
-// this file 
+// this file was my original file that i was using to fetch the games from the igdb api and display them on the home page of the website.
+// this file is no longer in use but i have left it here for reference purposes.
+
 header("Content-Type: application/json");
 
 $accessToken = 'arxqn51p65ej84xlt4seqd3ycgnwup'; 

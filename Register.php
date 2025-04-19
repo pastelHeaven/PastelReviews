@@ -41,7 +41,7 @@ if(isset($_SESSION["user"])){
                 array_push($errors, "Passwords do not match");
             }
 
-            // Check if email already exists using prepared statements
+            // this check if email already exists by using prepared statements
             $sql = "SELECT * FROM users WHERE email = ?";
             $stmt = mysqli_prepare($conn, $sql);
             mysqli_stmt_bind_param($stmt, "s", $email);
@@ -56,7 +56,7 @@ if(isset($_SESSION["user"])){
             // Insert new user if no errors
             if (count($errors) > 0) {
                 foreach ($errors as $error) {
-                    echo "<div class='alert alert-danger'>$error</div>";
+                    echo "<div class='alert'>$error</div>";
                 }
             } else {
                 $passwordHash = password_hash($password, PASSWORD_DEFAULT); // Securely hash password
@@ -66,13 +66,13 @@ if(isset($_SESSION["user"])){
                 if ($stmt) {
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $passwordHash);
                     mysqli_stmt_execute($stmt);
-                    echo "<div class='alert alert-success'>You are registered successfully, go to login.</div>";
+                    echo "<div class='success'>You are registered successfully, go to login.</div>";
                     mysqli_stmt_close($stmt);
                 } else {
                     die("Something went wrong.");
                 }
             }
-            mysqli_close($conn); // Close database connection
+            mysqli_close($conn); 
         }
         ?>
         

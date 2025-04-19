@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="GameReview.css" rel="stylesheet" type="text/css" />
     <title>PastelReviews</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- The Heading, logo and navigation bar -->
     <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo" alt="PastelReviews"><img src="img/Pastel (3).png"></a>
-            <ul class="nav-list section1">
-                <li class="nav-items"><a href="index.html">Home</a></li>
-                <li class="nav-items"><a href="gameGrid.html">Games</a></li>
-                <li class="nav-items"><a href="news.html">Gaming News</a></li>
-                <li class="nav-items"><a href="upload.html">Gaming Upload</a></li>
-                <li class="nav-items"><a href="highlights.html">Gaming Forms</a></li>
-            </ul>
-            <div class="search-signup-container">
-                <div class="search-bar section">
-                    <form action="#">
-                        <input type="text" placeholder="Search.." name="search" />
-                        <button type="submit"><img src="img/download.png" alt="Search"></button>
-                    </form>
-                </div>
-                <div class="signup-button section3">
-                    <a href="Login.php"><button class="login">Login</button></a>
-                    <a href="Register.php"><button class="signup">Sign Up</button></a>
-                </div>
-            </div>
+      <div class="container">
+        <a href="index.html" class="logo" alt="PastelReviews"
+          ><img src="img/Pastel.png"
+        /></a>
+        <ul class="nav-list section1">
+          <li class="nav-items"><a href="index.html">Home</a></li>
+          <li class="nav-items"><a href="gameGrid.html">Games</a></li>
+          <li class="nav-items"><a href="news.html">Gaming News</a></li>
+          <li class="nav-items"><a href="gamesupload.php">Gaming Upload</a></li>
+          <li class="nav-items"><a href="forms.php">Gaming Forms</a></li>
+          <li class="nav-items"><a href="FAQ.html">FAQ</a></li>
+        </ul>
+        <div class="search-signup-container">
+          <div class="search-bar section">
+            <form action="#">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit">
+                <img src="img/download.png" alt="Search" />
+              </button>
+            </form>
+          </div>
+          <div class="signup-button section">
+            <a href="Login.php"><button class="login">Login</button></a>
+            <a href="Register.php"><button class="signup">Sign Up</button></a>
+            <a href="dashboard.php"
+              ><button class="signup">Dashboard</button></a
+            >
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- The main content of the page -->
     <section class="banner">
-        <div class="banner-text">
-            <h1>Welcome to PastelReviews</h1>
-            <p>Your source for the latest gaming reviews, news, and tips!</p>
-        </div>
+      <div class="banner-text">
+        <h1>Welcome to PastelReviews</h1>
+        <p>Your source for the latest gaming reviews, news, and tips!</p>
+      </div>
     </section>
 
     <main>
-        <section class="upcoming-games">
-            <h1>Upcoming Games</h1>  
-            <a href="upcoming.html" class="see-all">See All</a>
-            <hr>
-
-           
-        </section>
-        <div class="gallery-wrap">
-            <button class="scroll-button" id="back"><img src="img/55ovjpq6bo1dpbpq69e2m1lvrq.png" alt="left arrow"></button>
-            <div class="gallery">
-                <div>
+      <section class="upcoming-games">
+        <h1>Upcoming Games</h1>
+        <a href="gameGrid.html" class="see-all">See All</a>
+        <hr />
+      </section>
+      <div class="gallery-wrap">
+        <button class="scroll-button" id="back">
+          <img src="img/55ovjpq6bo1dpbpq69e2m1lvrq.png" alt="left arrow" />
+        </button>
+        <div class="gallery">
+          <!-- <div>
                     <span><img src="img/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="The Last of Us"></span>
                     <span><img src="img/Persona_5_cover_art.jpg" alt="Persona 5"></span>
                     <span><img src="img/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077"></span>
@@ -66,15 +74,19 @@
                     <span><img src="img/4SWTZZ2ZXqYC6aYF71kmtXkZuOPFCrB8.png" alt="Game Image"></span>
                     <span><img src="img/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="New Game 2"></span>
                     <span><img src="img/FF_XV_cover_art.jpg" alt="New Game 2"></span>
-                </div>
-            </div>
-            <button class="scroll-button" id="next"><img src="img/55ovjpq6bo1dpbpq69e2m1lvright.png" alt="right arrow"></button>
+                </div> -->
         </div>
+        <button class="scroll-button" id="next">
+          <img src="img/55ovjpq6bo1dpbpq69e2m1lvright.png" alt="right arrow" />
+        </button>
+      </div>
 
-        <div class="Virtcal-card">
-            <h1>Latest News</h1>
-            <a href="upcoming.html" class="see-all">See All</a>
-            <hr>
+      <div class="Virtcal-card">
+        <h1>Latest News</h1>
+        <a href="news.html" class="see-all">See All</a>
+        <hr />
+
+        <!-- <hr class="card-hr">
             <div class="card-item">
                 <img src="img/horizon-zero-dawn.jpg" alt=""></a>
                 <div class="text-content">
@@ -93,16 +105,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
                 
-            </div>
-            <hr class="card-hr">
-            <div class="card-item">
-                <img src="img/horizon-zero-dawn.jpg" alt=""></a>
-                <div class="text-content">
-
-                <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-                
                 
             </div>
             <hr class="card-hr">
@@ -115,110 +117,119 @@
                 </div>
                 
             </div>
-            <hr class="card-hr">
-            
+            <hr class="card-hr"> -->
+      </div>
+
+      <div class="upcoming-games">
+        <h1>Latest User Reviews</h1>
+        <hr />
+        <div class="review-grid">
+            <div class="review-item">
+                <!-- <img src="img/1.jpg" alt="">
+                <div class="review-content">
+                    <div class="review-header">
+                        <span class="reviewer-name"></span>
+                        <span class="review-rating">★★★★☆</span>
+                       
+                    </div>
+                    <p class="review-text">Best game ever! I love the story and the characters</p>
+                </div> -->
+                    
+            </div>
+          <!-- <div class="review-item">
+                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-rating">★★★★☆</span>
+                            <span class="reviewed-game">reviewed Tennis</span>
+                        </div>
+                        <p class="review-text">Best game ever! I love the story and the characters</p>
+                        <div class="review-interactions">
+                            <span class="likes">9 Likes</span>
+                            <span class="comments">2 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-rating">★★★★☆</span>
+                            <span class="reviewed-game">reviewed Tennis</span>
+                        </div>
+                        <p class="review-text">Best game ever! I love the story and the characters</p>
+                        <div class="review-interactions">
+                            <span class="likes">9 Likes</span>
+                            <span class="comments">2 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-rating">★★★★☆</span>
+                            <span class="reviewed-game">reviewed Tennis</span>
+                        </div>
+                        <p class="review-text">Best game ever! I love the story and the characters</p>
+                        <div class="review-interactions">
+                            <span class="likes">9 Likes</span>
+                            <span class="comments">2 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
+                    <div class="review-content">
+                        <div class="review-header">
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-rating">★★★★☆</span>
+                            <span class="reviewed-game">reviewed Tennis</span>
+                        </div>
+                        <p class="review-text">Best game ever! I love the story and the characters</p>
+                        <div class="review-interactions">
+                            <span class="likes">9 Likes</span>
+                            <span class="comments">2 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-
-        <div class="upcoming-games">
-            <h1>Top User Reviews</h1>  
-            <a href="upcoming.html" class="see-all">See All</a>
-            <hr>
-            <div class="review-grid">
-                <div class="review-item">
-                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
-                    <div class="review-content">
-                        <div class="review-header">
-                            <span class="reviewer-name">John Doe</span>
-                            <span class="review-rating">★★★★☆</span>
-                            <span class="reviewed-game">reviewed Tennis</span>
-                        </div>
-                        <p class="review-text">Best game ever! I love the story and the characters</p>
-                        <div class="review-interactions">
-                            <span class="likes">9 Likes</span>
-                            <span class="comments">2 Comments</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-item">
-                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
-                    <div class="review-content">
-                        <div class="review-header">
-                            <span class="reviewer-name">John Doe</span>
-                            <span class="review-rating">★★★★☆</span>
-                            <span class="reviewed-game">reviewed Tennis</span>
-                        </div>
-                        <p class="review-text">Best game ever! I love the story and the characters</p>
-                        <div class="review-interactions">
-                            <span class="likes">9 Likes</span>
-                            <span class="comments">2 Comments</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-item">
-                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
-                    <div class="review-content">
-                        <div class="review-header">
-                            <span class="reviewer-name">John Doe</span>
-                            <span class="review-rating">★★★★☆</span>
-                            <span class="reviewed-game">reviewed Tennis</span>
-                        </div>
-                        <p class="review-text">Best game ever! I love the story and the characters</p>
-                        <div class="review-interactions">
-                            <span class="likes">9 Likes</span>
-                            <span class="comments">2 Comments</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-item">
-                    <img class="profile-pic" src="img/—Pngtree—gray avatar placeholder_6398267.png" alt="User Profile Picture">
-                    <div class="review-content">
-                        <div class="review-header">
-                            <span class="reviewer-name">John Doe</span>
-                            <span class="review-rating">★★★★☆</span>
-                            <span class="reviewed-game">reviewed Tennis</span>
-                        </div>
-                        <p class="review-text">Best game ever! I love the story and the characters</p>
-                        <div class="review-interactions">
-                            <span class="likes">9 Likes</span>
-                            <span class="comments">2 Comments</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-
-
+      </div>
     </main>
-            
+
     <footer class="footer">
-        <div class="footer-heading">
-            <h1>OUR NEWSLETTER</h1>
+      <div class="footer-heading">
+        <h1>OUR NEWSLETTER</h1>
+      </div>
+      <div class="footer-newsletter">
+        <p>Subscribe to our gaming newsletter</p>
+        <div class="newsletter-signup">
+          <input type="email" placeholder="Enter your email..." />
+          <button class="subscribe">SUBSCRIBE</button>
         </div>
-        <div class="footer-newsletter">
-            <p>Subscribe to our gaming newsletter</p>
-            <div class="newsletter-signup">
-                <input type="email" placeholder="Enter your email...">
-                <button class="subscribe">SUBSCRIBE</button>
-            </div>
-        </div>
-        <div class="footer-navigation">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Onome</p>
-        </div>
+      </div>
+      <div class="footer-navigation">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gameGrid.html">Games</a></li>
+            <li><a href="news.html">Gaming News</a></li>
+            <li><a href="gamesupload.php">Gaming Upload</a></li>
+            <li><a href="forms.php">Gaming Forums</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Onome</p>
+      </div>
     </footer>
-    
+
+    <script src="index.js"></script>
     <script src="GameReview.js"></script>
-</body>
+  </body>
 </html>

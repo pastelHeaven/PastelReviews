@@ -10,13 +10,14 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="index.html" class="logo">PastelReviews</a>
+        <a href="index.html" class="logo-image" alt="PastelReviews"><img src="img/Pastel.png"></a>
         <ul class="nav-list section1">
           <li class="nav-items"><a href="index.html">Home</a></li>
           <li class="nav-items"><a href="gameGrid.html">Game</a></li>
           <li class="nav-items"><a href="news.html">Gaming News</a></li>
-          <li class="nav-items"><a href="tips.html">Gaming Upload</a></li>
-          <li class="nav-items"><a href="highlights.html">Gaming Forms</a></li>
+          <li class="nav-items"><a href="gamesupload.php">Gaming Upload</a></li>
+          <li class="nav-items"><a href="forms.php">Gaming Forms</a></li>
+          <li class="nav-items"><a href="FAQ.html">FAQ</a></li>
         </ul>
         <div class="search-signup-container">
           <div class="search-bar section2">
@@ -30,6 +31,7 @@
           <div class="signup-button section3">
             <a href="Login.php"><button class="login">Login</button></a>
             <a href="Register.php"><button class="signup">Sign Up</button></a>
+            <a href="dashboard.php"><button class="signup">Dashboard</button></a>
           </div>
         </div>
       </div>
@@ -61,7 +63,36 @@
         <div id="reviews-container"></div>
       </div>
     </div>
+    <footer class="footer">
+        <div class="footer-heading">
+          <h1>OUR NEWSLETTER</h1>
+        </div>
+        <div class="footer-newsletter">
+          <p>Subscribe to our gaming newsletter</p>
+          <div class="newsletter-signup">
+            <input type="email" placeholder="Enter your email...">
+            <button class="subscribe">SUBSCRIBE</button>
+          </div>
+        </div>
+        <div class="footer-navigation">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gameGrid.html">Games</a></li>
+              <li><a href="news.html">Gaming News</a></li>
+              <li><a href="gamesupload.php">Gaming Upload</a></li>
+              <li><a href="forms.php">Gaming Forums</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Onome</p>
+        </div>
+      </footer>
     <script src="gamedetails.js"></script>
     <script src="avg_rating.js"></script>
+    
   </body>
+
 </html>

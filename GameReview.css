@@ -9,12 +9,6 @@ body {
     padding: 0;
 }
 
-.logo {
-    color: #fff;
-    font-weight: 1000;
-    text-decoration: none;
-    padding: 20px;
-}
 
 .header {
     left: 0;
@@ -66,6 +60,21 @@ body {
     bottom: -5px;
     transition: all 0.3s ease-in-out;
 }
+
+a.logo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* centers vertically if inside a nav */
+  }
+  
+  a.logo img {
+    padding: 0;
+    margin: 0;
+    height: 100%;     /* ensures the logo scales with the navbar */
+    max-height: 70px; /* adjust based on your nav height */
+    display: block;
+  }
 
 .card-hr {
     width: 90%;
@@ -137,6 +146,7 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0;
+    position: relative;
 }
 
 .banner-text {
@@ -240,8 +250,16 @@ body {
 .Virtcal-card {
     padding: 5px 200px;
 }
+.card-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+  }
 
-.Virtcal-card img {
+.index-img img {
     width: 310px;
     height: 190px;
 }
@@ -332,6 +350,10 @@ body {
     gap: 20px;
     font-size: 0.9em;
     color: #aaa;
+}
+ a {
+    text-decoration: none;
+    color: #e54ed0;
 }
 
 .likes, .comments {
@@ -739,6 +761,66 @@ h2 {
 } */
 
 
+/* Making the site responsive */
 
+
+@media (max-width: 1025px) {
+
+    #imgSection img {
+        width: 235px;
+        height: 150px;
+    }
+
+    #infoSection {
+        width: 700px;
+        height: 325px;
+        top: 76%;
+    }
+
+    .hint {
+        padding-left: 55px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container { 
+        padding: 0px 49px;
+
+    }
+
+    .upcoming-games {
+        padding: 0px 84px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+    .signup-button section{
+        display: flex;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #imgSection {
+        /* width: 100%; */
+        column-count: 2;
+    }
+
+    #infoSection {
+        width: 400px;
+        height: 320px;
+
+    }
+
+    #imgContainer {
+        width: 200px;
+        height: 290px;
+
+    }
+
+}
 
 

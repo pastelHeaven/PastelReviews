@@ -79,3 +79,23 @@ button.submit-btn:hover {
 button.submit-btn:active {
     transform: scale(0.98);
 }
+.alert {
+    padding: 12px;
+    text-align: center;
+    margin: 20px auto;
+    width: 340px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #c8f7c5;
+    color: #2c662d;
+    border: 1px solid #2c662d;
+}
+
+.alert.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+    border: 1px solid #c62828;
+}

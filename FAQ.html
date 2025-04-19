@@ -1,0 +1,239 @@
+<!-- his is the FAQ page. It contains a list of frequently asked questions and their answers. 
+The page is styled with CSS and includes a header, footer, and a script to toggle the visibility of the answers when the questions are clicked.
+ The layout is responsive and user-friendly, designed to provide information about the website's features and policies. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="GameReview.css" rel="stylesheet" type="text/css" />
+  <title>PastelReviews</title>
+  <style>
+    
+    .faq-container {
+        max-width: 900px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    }
+
+    .faq-container h1 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #663399;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      color: #fff;
+      padding: 20px 15px;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq-question::after {
+      content: "▾";
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.active::after {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 15px 20px;
+      color: #fff;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: #ff99ff;
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #ff66cc;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" alt="PastelReviews"><img src="img/Pastel.png"></a>
+            <ul class="nav-list section1">
+                <li class="nav-items"><a href="index.html">Home</a></li>
+                <li class="nav-items"><a href="gameGrid.html">Games</a></li>
+                <li class="nav-items"><a href="news.html">Gaming News</a></li>
+                <li class="nav-items"><a href="gamesupload.php">Gaming Upload</a></li>
+                <li class="nav-items"><a href="forms.php">Gaming Forms</a></li>
+                <li class="nav-items"><a href="FAQ.html">FAQ</a></li>
+            </ul>
+            <div class="search-signup-container">
+                <div class="search-bar section">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search" />
+                        <button type="submit"><img src="img/download.png" alt="Search"></button>
+                    </form>
+                </div>
+                <div class="signup-button section">
+                    <a href="Login.php"><button class="login">Login</button></a>
+                    <a href="Register.php"><button class="signup">Sign Up</button></a>
+                    <a href="dashboard.php"><button class="signup">Dashboard</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <main>
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq-item">
+        <button class="faq-question">What is PastelReviews?</button>
+        <div class="faq-answer">
+          <p>PastelReviews is a community-driven platform where gamers can discover, review, upload, and discuss indie games. We also share the latest gaming news and allow users to interact through forums.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do I need an account to use the site?</button>
+        <div class="faq-answer">
+          <p>You can browse content without an account, but you’ll need to register and log in to upload games, post reviews, or participate in forums.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I submit a game?</button>
+        <div class="faq-answer">
+          <p>You can submit a game through our upload form available on the website once you're logged in.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What types of games can I submit?</button>
+        <div class="faq-answer">
+          <p>You can submit any type of game, including indie games, mods, and more.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What types of game files are allowed?</button>
+        <div class="faq-answer">
+          <p>You can upload .zip, .rar, .7z, or .exe files. Make sure the game is packaged clearly and tested before submission.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How can I contact support?</button>
+        <div class="faq-answer">
+          <p>You can contact our support team through the contact form on our website.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I edit my game submission after uploading?</button>
+        <div class="faq-answer">
+          <p>Yes, you can edit your game submission at any time through your dashboard.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I leave a review?</button>
+        <div class="faq-answer">
+          <p>You can leave a review on the game details page after logging in. Just scroll to the reviews section and write yours.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I create a forum post?</button>
+        <div class="faq-answer">
+          <p>Go to the Forum page, click “Create a Post,” and fill out the title, category, and content. Your post will appear immediately after submission.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I comment on posts?</button>
+        <div class="faq-answer">
+          <p>Yes. Click on a post to view and join the discussion by leaving comments.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Are there rules for forum discussions?</button>
+        <div class="faq-answer">
+          <p>Keep things respectful, on-topic, and free of hate speech or inappropriate content. Violations may lead to post removal or bans.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What happens if I upload copyrighted content without permission?</button>
+        <div class="faq-answer">
+          <p>Your game may be taken down, and your account may be restricted or banned. You must agree to our <a href="copyright-declaration.html" target="_blank">Copyright Declaration</a> before uploading.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-heading">
+      <h1>OUR NEWSLETTER</h1>
+    </div>
+    <div class="footer-newsletter">
+      <p>Subscribe to our gaming newsletter</p>
+      <div class="newsletter-signup">
+        <input type="email" placeholder="Enter your email...">
+        <button class="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <div class="footer-navigation">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gameGrid.html">Games</a></li>
+          <li><a href="news.html">Gaming News</a></li>
+          <li><a href="gamesupload.php">Gaming Upload</a></li>
+          <li><a href="forms.php">Gaming Forums</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Onome</p>
+    </div>
+  </footer>
+
+  <script>
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach((question) => {
+      question.addEventListener("click", () => {
+        question.classList.toggle("active");
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 // This script fetches game data from a PHP server script and displays it in a grid format on the webpage.
 // It uses the igbd API to retrieve data and dynamically creates HTML elements to show the game information.
-// ive stopt uisng this code for my game grid and make a copy called fetch_gamescode.js as ive ran into an 3rd party api error
+// ive stop uisng this code for my game grid and make a copy called fetch_gamescode.js as ive ran into an 3rd party api error
 //  as igbd has changed its api and i need to update my code to work with my databse but here is my old code for reference
 
 document.addEventListener("DOMContentLoaded", function () {

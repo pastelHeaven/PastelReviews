@@ -29,18 +29,19 @@ if (isset($_POST["submit"])) {
                 header("Location: dashboard.php");
                 exit();
             } else {
-                echo "<div class='alert alert-danger'>Password does not match</div>";
+                echo "<div class='alert'>Password does not match</div>";
             }
         } else {
-            echo "<div class='alert alert-danger'>Username does not match</div>";
+            echo "<div class='alert'>Username does not match</div>";
         }
         mysqli_stmt_close($stmt);
     } else {
-        echo "<div class='alert alert-danger'>Something went wrong</div>";
+        echo "<div class='alert'>Something went wrong</div>";
     }
     mysqli_close($conn);
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +70,7 @@ if (isset($_POST["submit"])) {
 
     <div>
         <p>Need to register? <a href="Register.php">Click Here</a></p>
-        <p>Forgot password? <a href="ForgotPassword.php">Click Here</a></p>
+        <p>Forgot password? <a href="">Click Here</a></p>
     </div>
 </body>
 </html>

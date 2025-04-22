@@ -20,32 +20,79 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $category = $_POST["category"]; 
     $content = $_POST["content"];
 
-    // this is basic moderation check to check if the post contains any offensive words, this is just a basic check and can be improved by using maybe ai moderation
-    // or mods to check the post before it is posted, this is just a basic check to see if the post contains any offensive wordsbut for right now this is just a basic check
-    $offensivewords = ['badword1', 'badword2', 'badword4', 'badword3']; 
-    $found_offensive = false;
+//     // this is basic moderation check to check if the post contains any offensive words, this is just a basic check and can be improved by using maybe ai moderation
+//     // or mods to check the post before it is posted, this is just a basic check to see if the post contains any offensive wordsbut for right now this is just a basic check
+//     $offensivewords = ['badword1', 'badword2', 'badword4', 'badword3']; 
+//     $found_offensive = false;
 
-    foreach ($offensivewords as $word) {
-        if (stripos($title, $word) !== false || stripos($content, $word) !== false) {
-            $found_offensive = true;
-            break;
-        }
-    }
-// identify if the post contains any offensive words and if it does then it will not be posted and the user will be notified that the post contains offensive words
+//     foreach ($offensivewords as $word) {
+//         if (stripos($title, $word) !== false || stripos($content, $word) !== false) {
+//             $found_offensive = true;
+//             break;
+//         }
+//     }
+// // identify if the post contains any offensive words and if it does then it will not be posted and the user will be notified that the post contains offensive words
+//     if ($found_offensive) {
+//         $message = "Your post contains inappropriate language. Please revise.";
+//     $message_type = "error";
+    
+//     }else{
+
+//     // Insert into DB
+//     $stmt = $conn->prepare("INSERT INTO forum_post (user_id, title, category, content) VALUES (?, ?, ?, ?)");
+//     $stmt->bind_param("isss", $user_id, $title, $category, $content);
+//     $stmt->execute();
+
+//     $message = "Your post has been created successfully!";
+//     $message_type = "success";}
+    // Check for profanity using the Bad Words API
+$api_key = "8DKFLCO4bx2t0iYKfLvHp6ZLkWSwc3zU"; 
+$api_url = "https://api.apilayer.com/bad_words";
+
+$check_text = $title . " " . $content; // Combine title and content for full check
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_URL => $api_url,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => json_encode(["text" => $check_text]),
+    CURLOPT_HTTPHEADER => [
+        "Content-Type: application/json",
+        "apikey: $api_key"
+    ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl);
+
+if ($err) {
+    $message = "Error contacting moderation service. Please try again.";
+    $message_type = "error";
+} else {
+    $result = json_decode($response, true);
+    $found_offensive = $result["bad_words_total"] > 0;
+
     if ($found_offensive) {
         $message = "Your post contains inappropriate language. Please revise.";
-    $message_type = "error";
-    
-    }else{
+        $message_type = "error";
+    } else {
+        // Insert into DB
+        $stmt = $conn->prepare("INSERT INTO forum_post (user_id, title, category, content) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("isss", $user_id, $title, $category, $content);
+        $stmt->execute();
 
-    // Insert into DB
-    $stmt = $conn->prepare("INSERT INTO forum_post (user_id, title, category, content) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("isss", $user_id, $title, $category, $content);
-    $stmt->execute();
+        $message = "Your post has been created successfully!";
+        $message_type = "success";
+    }
+}
 
-    $message = "Your post has been created successfully!";
-    $message_type = "success";}
-    
 }
 ?>
 

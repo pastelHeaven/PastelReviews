@@ -8,6 +8,138 @@ body {
     margin: 0;
     padding: 0;
 }
+.btn {
+    background-color: #e54ed0;
+    border: 0px;
+    font-weight: 650;
+    border-radius: 13px;
+    color: #ffe4f2;
+    padding: 9px 12px;
+    cursor: pointer;
+    text-decoration: none; /* For <a> tags */
+    display: inline-block; /* Keeps button spacing */
+    transition: background-color 0.3s ease;
+}
+
+.forum-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.thread-card {
+    background-color: #0007;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+    transition: transform 0.2s;
+}
+
+.thread-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 12px #a29bfe;
+}
+
+.thread-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.thread-meta {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.badge {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.forum-header {
+    max-width: 883px;
+    margin: 0px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.create-btn {
+    background-color: #ec4dac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.create-btn:hover {
+    background-color: #ffe4f2;
+    color: #000;
+}
+
+
+.btn:hover {
+    background-color: #ffe4f2;
+    color: #44008b;
+    font-weight: 650;
+}
+.upload-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 36px 200px;
+}
+
+.upload-card {
+    padding: 15px;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+}
+
+
+.upload-cover {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.upload-header {
+    max-width: 883px;
+    margin: 0px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.create-btn {
+    background-color: #ec4dac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.create-btn :hover {
+    background-color: #ffe4f2;
+    color: #000;
+
+}
 
 
 .header {
@@ -301,6 +433,10 @@ a.logo {
     gap: 20px;
     padding-bottom: 45px;
 }
+a {
+    text-decoration: none;
+    color: #ffadc6;
+}
 
 .review-item {
     display: flex;
@@ -353,7 +489,7 @@ a.logo {
 }
  a {
     text-decoration: none;
-    color: #e54ed0;
+    color: #ffadc6;
 }
 
 .likes, .comments {

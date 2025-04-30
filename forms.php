@@ -10,85 +10,21 @@ $result = $conn->query("SELECT post_id, title, category, created_at FROM forum_p
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="GameReview.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <link href="GameReview.css" rel="stylesheet" type="text/css" >
     <title>PastelReviews</title>
 </head>
-<style>
-    .forum-container {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 20px;
-    }
 
-    .thread-card {
-        background-color: #0007;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 30px;
-        transition: transform 0.2s;
-    }
-
-    .thread-card:hover {
-        transform: scale(1.01);
-        box-shadow: 0 0 12px #a29bfe;
-    }
-
-    .thread-title {
-        font-size: 20px;
-        color: #fff;
-        margin-bottom: 5px;
-    }
-
-    .thread-meta {
-        font-size: 14px;
-        color: #bbb;
-    }
-
-    .badge {
-        background-color: #6c5ce7;
-        color: white;
-        padding: 2px 8px;
-        border-radius: 5px;
-        font-size: 12px;
-        margin-left: 10px;
-    }
-
-    .forum-header {
-        max-width: 883px;
-        margin: 0px auto;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-    }
-
-    .create-btn {
-        background-color: #ec4dac;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        transition: background-color 0.3s;
-    }
-
-    .create-btn:hover {
-        background-color: #ffe4f2;
-        color: #000;
-    }
-
-</style>
 
 <body>
     <!-- The Heading, logo and navigation bar -->
     <header class="header">
         <div class="container">
-        <a href="index.html" class="logo" alt="PastelReviews"><img src="img/Pastel.png"></a>
+        <a href="index.html" class="logo"
+          ><img src="img/Pastel.png" alt="PastelReviews" >
+        </a>
             <ul class="nav-list section1">
                 <li class="nav-items"><a href="index.html">Home</a></li>
                 <li class="nav-items"><a href="gameGrid.html">Games</a></li>
@@ -100,15 +36,15 @@ $result = $conn->query("SELECT post_id, title, category, created_at FROM forum_p
             <div class="search-signup-container">
                 <div class="search-bar section">
                     <form action="#">
-                        <input type="text" placeholder="Search.." name="search" />
+                        <input type="text" placeholder="Search.." name="search" >
                         <button type="submit"><img src="img/download.png" alt="Search"></button>
                     </form>
                 </div>
-                <div class="signup-button section3">
-                    <a href="Login.php"><button class="login">Login</button></a>
-                    <a href="Register.php"><button class="signup">Sign Up</button></a>
-                    <a href="dashboard.php"><button class="signup">Dashboard</button></a>
-                </div>
+                <div class="signup-button section">
+            <a href="Login.php" class="btn">Login</a>
+            <a href="Register.php" class="btn">Sign Up</a>
+            <a href="dashboard.php" class="btn">Dashboard</a>
+          </div>
             </div>
         </div>
     </header>
@@ -116,10 +52,9 @@ $result = $conn->query("SELECT post_id, title, category, created_at FROM forum_p
 
         <div class="forum-header">
             <h1>Forum Discussions</h1>
-           <a href="post.php"><button class="create-btn">Create a post</button></a> 
+           <a href="post.php" class="create-btn">Create a post</a> 
         </div>
 
-        
         <div class="forum-container">
             <!-- This display the forum post that the user made from the database using fetch_assoc -->
     <?php while ($row = $result->fetch_assoc()) : ?>
@@ -155,7 +90,8 @@ $result = $conn->query("SELECT post_id, title, category, created_at FROM forum_p
                         class="badge">Hardware</span></div>
             </div>
         </div> -->
-</body>
+    </main>
+
 <footer class="footer">
     <div class="footer-heading">
       <h1>OUR NEWSLETTER</h1>
@@ -183,5 +119,5 @@ $result = $conn->query("SELECT post_id, title, category, created_at FROM forum_p
       <p>&copy; 2024 Onome</p>
     </div>
   </footer>
-
+  </body>
 </html>

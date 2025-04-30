@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // }
     
     //thsi takes the game id from the game grid and adds it on the review html
-    document.getElementById("review-link").href = `review.html?game_id=${gameId}`;
+    document.getElementById("log-review-btn").href = `review.html?game_id=${gameId}`;
 
     // This is for fetch Game Details using the gamed id and finds it from the database as its uses a php file
     fetch(`fetch_game_details.php?game_id=${gameId}`)

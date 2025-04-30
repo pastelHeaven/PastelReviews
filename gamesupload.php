@@ -14,10 +14,10 @@ $result = mysqli_query($conn, $sql);
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="GameReview.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <link href="GameReview.css" rel="stylesheet" type="text/css" >
     <title>PastelReviews</title>
 </head>
 
@@ -25,7 +25,7 @@ $result = mysqli_query($conn, $sql);
     <!-- The Heading, logo and navigation bar -->
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo" alt="PastelReviews"><img src="img/Pastel.png"></a>
+            <a href="index.html" class="logo" ><img src="img/Pastel.png" alt="PastelReviews"></a>
             <ul class="nav-list section1">
                 <li class="nav-items"><a href="index.html">Home</a></li>
                 <li class="nav-items"><a href="gameGrid.html">Games</a></li>
@@ -37,73 +37,24 @@ $result = mysqli_query($conn, $sql);
             <div class="search-signup-container">
                 <div class="search-bar section">
                     <form action="#">
-                        <input type="text" placeholder="Search.." name="search" />
+                        <input type="text" placeholder="Search.." name="search" >
                         <button type="submit"><img src="img/download.png" alt="Search"></button>
                     </form>
                 </div>
-                <div class="signup-button section3">
-                    <a href="Login.php"><button class="login">Login</button></a>
-                    <a href="Register.php"><button class="signup">Sign Up</button></a>
-                    <a href="dashboard.php"><button class="signup">Dashboard</button></a>
-                </div>
+                <div class="signup-button section">
+            <a href="Login.php" class="btn">Login</a>
+            <a href="Register.php" class="btn">Sign Up</a>
+            <a href="dashboard.php" class="btn">Dashboard</a>
+          </div>
             </div>
         </div>
     </header>
-    <style>
-        .upload-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            padding: 36px 200px;
-        }
-
-        .upload-card {
-            padding: 15px;
-            transition: transform 0.3s ease;
-            max-width: 100%;
-        }
-
-
-        .upload-cover {
-            width: 100%;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-
-        .upload-header {
-            max-width: 883px;
-            margin: 0px auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .create-btn {
-            background-color: #ec4dac;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .create-btn :hover {
-            background-color: #ffe4f2;
-            color: #000;
-
-        }
-    </style>
+    
     <main>
 
         <div class="upload-header">
             <h1>Top indie games</h1>
-            <a href="upload_game.php"><button class="create-btn">Upload your Game</button></a>
+            <a href="upload_game.php" class="create-btn">Upload your Game</a>
         </div>
         <div class="upload-grid">
             <?php while ($row = mysqli_fetch_assoc($result)): ?>
@@ -118,6 +69,7 @@ $result = mysqli_query($conn, $sql);
                     </p>
                 </div>
             <?php endwhile; ?>
+            </div>
             <!-- </div>
         <div class="upload-grid">
             <div class="upload-card">

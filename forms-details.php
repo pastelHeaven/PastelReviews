@@ -35,10 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["comment_text"])) {
     } else {
         $user_id = $_SESSION["user_id"];
         $comment_text = trim($_POST["comment_text"]);
+        
 
         // simularly to the post moderation check, this checks if the comment contains any offensive words and if it 
         // does then it will not be posted and the user will be notified that the comment contains offensive words
-        $offensivewords = ['badword1', 'badword2', 'badword4', 'badword3'];
+
+        $offensivewords = ['fuck', 'badword2', 'badword4', 'badword3'];
         $found_offensive = false;
 
         foreach ($offensivewords as $word) {

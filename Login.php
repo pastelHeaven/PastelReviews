@@ -10,8 +10,6 @@ if (isset($_POST["submit"])) {
 
     $username = trim($_POST["username"]);
     $password = $_POST["password"];
-
-    // use prepared statement to prevent SQL injection
     $sql = "SELECT * FROM users WHERE username = ?";
     $stmt = mysqli_prepare($conn, $sql);
 

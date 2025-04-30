@@ -59,7 +59,7 @@ if(isset($_SESSION["user"])){
                     echo "<div class='alert'>$error</div>";
                 }
             } else {
-                $passwordHash = password_hash($password, PASSWORD_DEFAULT); // Securely hash password
+                $passwordHash = password_hash($password, PASSWORD_DEFAULT); 
                 $sql = "INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)";
                 $stmt = mysqli_prepare($conn, $sql);
 

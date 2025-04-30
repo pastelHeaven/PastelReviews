@@ -36,20 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 //         $message = "Your post contains inappropriate language. Please revise.";
 //     $message_type = "error";
     
-//     }else{
+//     }
 
-//     // Insert into DB
-//     $stmt = $conn->prepare("INSERT INTO forum_post (user_id, title, category, content) VALUES (?, ?, ?, ?)");
-//     $stmt->bind_param("isss", $user_id, $title, $category, $content);
-//     $stmt->execute();
-
-//     $message = "Your post has been created successfully!";
-//     $message_type = "success";}
-    // Check for profanity using the Bad Words API
+// Check for profanity using the Bad Words API
 $api_key = "8DKFLCO4bx2t0iYKfLvHp6ZLkWSwc3zU"; 
 $api_url = "https://api.apilayer.com/bad_words";
 
-$check_text = $title . " " . $content; // Combine title and content for full check
+$check_text = $title . " " . $content; 
 
 $curl = curl_init();
 
@@ -83,7 +76,7 @@ if ($err) {
         $message = "Your post contains inappropriate language. Please revise.";
         $message_type = "error";
     } else {
-        // Insert into DB
+    
         $stmt = $conn->prepare("INSERT INTO forum_post (user_id, title, category, content) VALUES (?, ?, ?, ?)");
         $stmt->bind_param("isss", $user_id, $title, $category, $content);
         $stmt->execute();

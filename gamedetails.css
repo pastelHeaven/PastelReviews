@@ -175,8 +175,13 @@ a.logo {
 
 #game-title {
     font-size: 2rem;
-    color: #ec4dac;
+    color: #fff;
     
+}
+
+a {
+    text-decoration: none;
+    color: #ffadc6;
 }
 
 .game-info p {
@@ -293,7 +298,24 @@ a.logo {
     margin-right: 5px;
 }
 
+.btn {
+    background-color: #e54ed0;
+    border: 0px;
+    font-weight: 650;
+    border-radius: 13px;
+    color: #ffe4f2;
+    padding: 9px 12px;
+    cursor: pointer;
+    text-decoration: none; /* For <a> tags */
+    display: inline-block; /* Keeps button spacing */
+    transition: background-color 0.3s ease;
+}
 
+.btn:hover {
+    background-color: #ffe4f2;
+    color: #44008b;
+    font-weight: 650;
+}
 
 .overlay {
     position: fixed;
@@ -415,7 +437,7 @@ a.logo {
 .footer-heading h1 {
     font-size: 24px;
     margin: 0;
-    color: #e54ed0; }
+    color: #fff; }
 
 .footer-newsletter {
     margin-bottom: 20px;

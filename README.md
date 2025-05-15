@@ -1,2 +1,2 @@
 # PastelReviews
-This is my game reveiw webiste for my final year project. You can regesiter and login as this webiste has a regisation system or you can clik on login and uses Username: test123 password: qwerty123
+This is my game review website for my final year project. You can register and log in as this website has a registration system, or you can click on login and use Username: test123 , password: qwerty123
